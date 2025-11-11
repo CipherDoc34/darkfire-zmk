@@ -42,5 +42,6 @@
                 &kp LSHIFT  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RCTRL  &kp UP  &kp PG_DN  
                 &kp LCTRL  &kp LGUI  &kp LALT  &kp SPACE  &kp RIGHT_ALT  &tog 0  &kp LEFT  &kp DOWN  &kp RIGHT
             >;
+        };
     };
-};
+}
