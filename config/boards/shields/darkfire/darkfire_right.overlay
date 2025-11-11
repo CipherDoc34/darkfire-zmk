@@ -6,17 +6,11 @@
 
         layer_1 {
             bindings = <
-            //       7       8       9         10      11      12        13         14      15
-                &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &kp PSCRN  &kp DEL  &kp INS  
-            //           6        7       8      9      10        11         12         13            14
-                    &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp MINUS  &kp EQUAL  &kp BACKSPACE  &kp HOME  
-            //              6     7       8     9      10       11        12          13          14
-                         &kp Y  &kp U  &kp I  &kp O  &kp P  &kp LBKT  &kp RBKT  &kp BACKSLASH  &kp END  
-            //            6     7         8    9      10        11        12       13
-                        &kp H  &kp J  &kp K  &kp L  &kp SEMI  &kp SQT  &kp RET  &kp PG_UP  
-            //         6       7         8         9      10          11      12      13
-                     &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RCTRL  &kp UP  &kp PG_DN  
-            //             4           5            6       7        8         9
+                &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &kp PSCRN  &kp DEL  &kp INS
+                    &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp MINUS  &kp EQUAL  &kp BACKSPACE  &kp HOME
+                         &kp Y  &kp U  &kp I  &kp O  &kp P  &kp LBKT  &kp RBKT  &kp BACKSLASH  &kp END
+                        &kp H  &kp J  &kp K  &kp L  &kp SEMI  &kp SQT  &kp RET  &kp PG_UP
+                     &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RCTRL  &kp UP  &kp PG_DN
                         &kp SPACE &kp RIGHT_ALT  &tog 0  &kp LEFT  &kp DOWN  &kp RIGHT
             >;
         };
