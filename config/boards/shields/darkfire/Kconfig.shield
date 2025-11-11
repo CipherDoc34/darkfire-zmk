@@ -1,0 +1,6 @@
+config SHIELD_DARKFIRE_LEFT
+    def_bool $(shields_list_contains, darkfire_left)
+
+
+config SHIELD_DARKFIRE_RIGHT
+    def_bool $(shields_list_contains, darkfire_right)

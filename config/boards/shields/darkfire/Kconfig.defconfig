@@ -1,0 +1,6 @@
+if SHIELD_DARKFIRE
+
+config ZMK_KEYBOARD_NAME
+    default "darkfire"
+
+endif
