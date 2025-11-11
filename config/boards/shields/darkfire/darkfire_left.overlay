@@ -1,4 +1,4 @@
-#include "caldera.dtsi"
+#include "darkfire.dtsi"
 
 &kscan0 {
     row-gpios
