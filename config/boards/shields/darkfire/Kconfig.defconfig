@@ -1,6 +1,16 @@
-if SHIELD_DARKFIRE
+if SHIELD_DARKFIRE_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "darkfire"
+    default "Caldera"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_DARKFIRE_LEFT || SHIELD_DARKFIRE_RIGHT
+
+config ZMK_SPLIT
+    default y
 
 endif

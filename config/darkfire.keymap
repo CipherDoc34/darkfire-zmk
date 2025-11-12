@@ -44,7 +44,7 @@
                  //  3,0     1       2       3     4     5        6                             7         8    9      10        11        12       13
                  &kp CAPS  &kp A  &kp S  &kp D  &kp F  &kp G   &trans                        &kp H  &kp J  &kp K  &kp L  &kp SEMI  &kp SQT  &kp RET  &kp PG_UP  
                  //  4,0      1      2       3     4     5         6                             7         8         9      10          11      12      13
-                 &kp LSHIFT  &kp Z  &kp X  &kp C  &kp V  &kp B   &trans                        &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RCTRL  &kp UP  &kp PG_DN  
+                 &kp LSHIFT  &kp Z  &kp X  &kp C  &kp V  &kp B   &trans                        &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHIFT  &kp UP  &kp PG_DN  
                  //  5,0         1         2         3          4       5        6               7            8         9        10         11       12
                  &kp LCTRL  &kp LGUI  &kp LALT  &kp SPACE    &trans  &trans    &trans        &kp SPACE &kp RIGHT_ALT  &tog 0  &kp LEFT  &kp DOWN  &kp RIGHT
              >;
