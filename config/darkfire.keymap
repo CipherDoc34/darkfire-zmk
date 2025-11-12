@@ -33,7 +33,7 @@
      keymap {
          compatible = "zmk,keymap";
  
-         layer_1 {
+         default {
              bindings = <
                  //  0,0      0, 1    0,2       0,3    0, 4     0,5    0,6              7       8       9         10      11      12        13         14      15
                  &kp ESCAPE  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6          &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &kp PSCRN  &kp DEL  &kp INS  
@@ -47,6 +47,74 @@
                  &kp LSHIFT  &kp Z  &kp X  &kp C  &kp V  &kp B   &trans                        &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHIFT  &kp UP  &kp PG_DN  
                  //  5,0         1         2         3          4       5        6               7            8         9        10         11       12
                  &kp LCTRL  &kp LGUI  &kp LALT  &kp SPACE    &trans  &trans    &trans        &kp SPACE &kp RIGHT_ALT  &tog 0  &kp LEFT  &kp DOWN  &kp RIGHT
+             >;
+
+         };
+         layer_1 {
+             bindings = <
+                 //  0,0      0, 1      0,2     0,3    0, 4     0,5    0,6              7       8       9         10      11      12        13         14      15
+                 &trans       &trans  &trans  &trans  &trans  &trans  &trans         &trans  &trans  &trans     &trans  &trans  &trans     &trans    &trans  &trans  
+                 //  1,0          1       2         3      4       5      6               7       8      9        10        11         12         13            14
+                 &trans         &trans  &trans  &trans  &trans  &trans  &trans         &trans   &trans   &trans  &trans    &trans    &trans          &trans       &trans   
+                 //  2,0        1      2     3        4        5      6                          7       8     9      10       11        12          13          14
+                 &trans       &trans &trans &trans  &trans  &trans    &trans                      &trans &trans &trans &trans &trans    &trans     &trans       &trans   
+                 //  3,0     1       2       3     4     5        6                             7         8        9      10        11        12       13
+                 &trans  &trans  &trans  &trans  &trans  &trans   &trans                        &trans   &trans  &trans  &trans   &trans    &trans   &trans
+                 //  4,0      1      2       3     4     5         6                             7         8         9      10          11      12      13
+                 &trans  &trans  &trans  &trans  &trans  &trans   &trans                        &trans   &trans    &trans   &trans    &trans   &trans  &trans
+                 //  5,0   1         2         3          4       5        6               7            8         9        10         11       12
+                 &trans  &trans  &trans      &trans    &trans  &trans    &trans          &trans         &trans     &trans    &trans   &trans   &trans 
+             >;
+         };
+
+         layer_2 {
+             bindings = <
+                 //  0,0      0, 1      0,2     0,3    0, 4     0,5    0,6              7       8       9         10      11      12        13         14      15
+                 &trans       &trans  &trans  &trans  &trans  &trans  &trans         &trans  &trans  &trans     &trans  &trans  &trans     &trans    &trans  &trans  
+                 //  1,0          1       2         3      4       5      6               7       8      9        10        11         12         13            14
+                 &trans         &trans  &trans  &trans  &trans  &trans  &trans         &trans   &trans   &trans  &trans    &trans    &trans          &trans       &trans   
+                 //  2,0        1      2     3        4        5      6                          7       8     9      10       11        12          13          14
+                 &trans       &trans &trans &trans  &trans  &trans    &trans                      &trans &trans &trans &trans &trans    &trans     &trans       &trans   
+                 //  3,0     1       2       3     4     5        6                             7         8        9      10        11        12       13
+                 &trans  &trans  &trans  &trans  &trans  &trans   &trans                        &trans   &trans  &trans  &trans   &trans    &trans   &trans
+                 //  4,0      1      2       3     4     5         6                             7         8         9      10          11      12      13
+                 &trans  &trans  &trans  &trans  &trans  &trans   &trans                        &trans   &trans    &trans   &trans    &trans   &trans  &trans
+                 //  5,0   1         2         3          4       5        6               7            8         9        10         11       12
+                 &trans  &trans  &trans      &trans    &trans  &trans    &trans          &trans         &trans     &trans    &trans   &trans   &trans 
+             >;
+         };
+
+         layer_3 {
+             bindings = <
+                 //  0,0      0, 1      0,2     0,3    0, 4     0,5    0,6              7       8       9         10      11      12        13         14      15
+                 &trans       &trans  &trans  &trans  &trans  &trans  &trans         &trans  &trans  &trans     &trans  &trans  &trans     &trans    &trans  &trans  
+                 //  1,0          1       2         3      4       5      6               7       8      9        10        11         12         13            14
+                 &trans         &trans  &trans  &trans  &trans  &trans  &trans         &trans   &trans   &trans  &trans    &trans    &trans          &trans       &trans   
+                 //  2,0        1      2     3        4        5      6                          7       8     9      10       11        12          13          14
+                 &trans       &trans &trans &trans  &trans  &trans    &trans                      &trans &trans &trans &trans &trans    &trans     &trans       &trans   
+                 //  3,0     1       2       3     4     5        6                             7         8        9      10        11        12       13
+                 &trans  &trans  &trans  &trans  &trans  &trans   &trans                        &trans   &trans  &trans  &trans   &trans    &trans   &trans
+                 //  4,0      1      2       3     4     5         6                             7         8         9      10          11      12      13
+                 &trans  &trans  &trans  &trans  &trans  &trans   &trans                        &trans   &trans    &trans   &trans    &trans   &trans  &trans
+                 //  5,0   1         2         3          4       5        6               7            8         9        10         11       12
+                 &trans  &trans  &trans      &trans    &trans  &trans    &trans          &trans         &trans     &trans    &trans   &trans   &trans 
+             >;
+         };
+
+         layer_4 {
+             bindings = <
+                 //  0,0      0, 1      0,2     0,3    0, 4     0,5    0,6              7       8       9         10      11      12        13         14      15
+                 &trans       &trans  &trans  &trans  &trans  &trans  &trans         &trans  &trans  &trans     &trans  &trans  &trans     &trans    &trans  &trans  
+                 //  1,0          1       2         3      4       5      6               7       8      9        10        11         12         13            14
+                 &trans         &trans  &trans  &trans  &trans  &trans  &trans         &trans   &trans   &trans  &trans    &trans    &trans          &trans       &trans   
+                 //  2,0        1      2     3        4        5      6                          7       8     9      10       11        12          13          14
+                 &trans       &trans &trans &trans  &trans  &trans    &trans                      &trans &trans &trans &trans &trans    &trans     &trans       &trans   
+                 //  3,0     1       2       3     4     5        6                             7         8        9      10        11        12       13
+                 &trans  &trans  &trans  &trans  &trans  &trans   &trans                        &trans   &trans  &trans  &trans   &trans    &trans   &trans
+                 //  4,0      1      2       3     4     5         6                             7         8         9      10          11      12      13
+                 &trans  &trans  &trans  &trans  &trans  &trans   &trans                        &trans   &trans    &trans   &trans    &trans   &trans  &trans
+                 //  5,0   1         2         3          4       5        6               7            8         9        10         11       12
+                 &trans  &trans  &trans      &trans    &trans  &trans    &trans          &trans         &trans     &trans    &trans   &trans   &trans 
              >;
          };
      };
