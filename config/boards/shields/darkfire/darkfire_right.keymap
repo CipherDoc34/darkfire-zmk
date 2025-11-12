@@ -1,49 +1,43 @@
 // Copyright (c) 2022 The ZMK Contributors
 // SPDX-License-Identifier: MIT
 
-#include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/bt.h>
-
-// Home row mods macro
-#define HRML(k1,k2,k3,k4) &ht LSHFT k1  &ht LALT k2  &ht LCTRL k3  &ht LGUI k4
-#define HRMR(k1,k2,k3,k4) &ht RGUI k1  &ht RCTRL k2  &ht RALT k3  &ht RSHFT k4
-
-/ {
-    behaviors {
-        ht: hold_tap {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <220>;
-            quick-tap-ms = <150>;
-            require-prior-idle-ms = <100>;
-            bindings = <&kp>, <&kp>;
-        };
-    };
-
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-    };
-
-     keymap {
-         compatible = "zmk,keymap";
- 
-         layer_1 {
-             bindings = <
-                 //           7       8       9         10      11      12        13         14      15
-                         &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &kp PSCRN  &kp DEL  &kp INS  
-                 //        6        7       8      9      10        11         12         13            14
-                     &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp MINUS  &kp EQUAL  &kp BACKSPACE  &kp HOME  
-                 //             6     7       8     9      10       11        12          13          14
-                         &kp Y  &kp U  &kp I  &kp O  &kp P  &kp LBKT  &kp RBKT  &kp BACKSLASH  &kp END  
-                 //             6     7         8    9      10        11        12       13
-                           &kp H  &kp J  &kp K  &kp L  &kp SEMI  &kp SQT  &kp RET  &kp PG_UP  
-                 //            6       7         8         9      10          11      12      13
-                             &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RCTRL  &kp UP  &kp PG_DN  
-                 //                 4           5            6       7        8         9
-                             &kp SPACE &kp RIGHT_ALT  &tog 0  &kp LEFT  &kp DOWN  &kp RIGHT
-             >;
-         };
-     };
-};
+// #include <behaviors.dtsi>
+// #include <dt-bindings/zmk/keys.h>
+// #include <dt-bindings/zmk/bt.h>
+// 
+// // Home row mods macro
+// #define HRML(k1,k2,k3,k4) &ht LSHFT k1  &ht LALT k2  &ht LCTRL k3  &ht LGUI k4
+// #define HRMR(k1,k2,k3,k4) &ht RGUI k1  &ht RCTRL k2  &ht RALT k3  &ht RSHFT k4
+// 
+// / {
+//     behaviors {
+//         ht: hold_tap {
+//             compatible = "zmk,behavior-hold-tap";
+//             #binding-cells = <2>;
+//             flavor = "tap-preferred";
+//             tapping-term-ms = <220>;
+//             quick-tap-ms = <150>;
+//             require-prior-idle-ms = <100>;
+//             bindings = <&kp>, <&kp>;
+//         };
+//     };
+// 
+//     conditional_layers {
+//         compatible = "zmk,conditional-layers";
+//     };
+// 
+//      keymap {
+//          compatible = "zmk,keymap";
+//  
+//          layer_1 {
+//              bindings = <
+//                          &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &kp PSCRN  &kp DEL  &kp INS
+//                      &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp MINUS  &kp EQUAL  &kp BACKSPACE  &kp HOME
+//                          &kp Y  &kp U  &kp I  &kp O  &kp P  &kp LBKT  &kp RBKT  &kp BACKSLASH  &kp END
+//                            &kp H  &kp J  &kp K  &kp L  &kp SEMI  &kp SQT  &kp RET  &kp PG_UP
+//                              &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RCTRL  &kp UP  &kp PG_DN
+//                              &kp SPACE &kp RIGHT_ALT  &tog 0  &kp LEFT  &kp DOWN  &kp RIGHT
+//              >;
+//          };
+//      };
+// };
